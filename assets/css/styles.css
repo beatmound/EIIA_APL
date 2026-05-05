@@ -1,0 +1,192 @@
+/* ==========================================================================
+   THERAPIE-FINDER SACHSEN - MOODBOARD STYLES
+   ========================================================================== */
+
+/* 1. Schriften von Google Fonts importieren */
+
+/* 2. Farbpalette als CSS-Variablen definieren */
+
+:root {
+  --primary-blue: #1A3A5F;
+  --sage-green: #8BAE96;
+  --warm-cream: #FDF9F2;
+  --text-dark: #2C3E50;
+  --card-shadow: 0 12px 32px rgba(26, 58, 95, 0.08);
+}
+
+/* ==========================================================================
+   BASIS & HINTERGRUND
+   ========================================================================== */
+
+body {
+  background-color: var(--warm-cream) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 18px !important;
+  color: var(--text-dark) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   TYPOGRAFIE
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Merriweather', serif !important;
+  color: var(--primary-blue) !important;
+}
+
+.text-muted {
+  color: #6c7a89 !important;
+}
+
+/* ==========================================================================
+   BUTTONS (12px Radius & weiche Hover-Effekte)
+   ========================================================================== */
+
+.btn {
+  border-radius: 12px !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+/* Haupt-Aktionsbutton (Primary Blue) */
+
+.btn-primary {
+  background-color: var(--primary-blue) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background-color: #112740 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26, 58, 95, 0.2);
+}
+
+/* Sekundär-Buttons (Zurück / Überspringen) */
+
+.btn-light {
+  background-color: #ffffff !important;
+  color: var(--primary-blue) !important;
+  border: 1px solid rgba(26, 58, 95, 0.15) !important;
+}
+
+.btn-light:hover {
+  background-color: #f1f4f8 !important;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   KARTEN (Cards / Screen-Cards)
+   ========================================================================== */
+
+.card, .screen-card, .list-group-item {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: var(--card-shadow) !important;
+  background-color: #ffffff !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover für klickbare Listen-Einträge in der Ausgabe */
+
+.list-group-item-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(26, 58, 95, 0.12) !important;
+  z-index: 10;
+}
+
+/* ==========================================================================
+   FORMULARE (Inputs, Radio, Checkbox)
+   ========================================================================== */
+
+.form-control, .form-select {
+  border-radius: 12px !important;
+  border: 1px solid rgba(26, 58, 95, 0.2) !important;
+  font-size: 18px !important;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+}
+
+/* Fokus-Zustand: Sage Green statt Standard-Blau */
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--sage-green) !important;
+  box-shadow: 0 0 0 4px rgba(139, 174, 150, 0.2) !important;
+}
+
+/* Radio-Buttons und Checkboxen */
+
+.form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0.1em;
+  border: 2px solid rgba(26, 58, 95, 0.25);
+  cursor: pointer;
+}
+
+/* Wenn ausgewählt: Sage Green für Beruhigung/Erfolg */
+
+.form-check-input:checked {
+  background-color: var(--sage-green) !important;
+  border-color: var(--sage-green) !important;
+}
+
+.form-check-label {
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-top: 0.15rem;
+}
+
+/* ==========================================================================
+   AMPELSYSTEM (Status-Badges)
+   ========================================================================== */
+
+.status-badge {
+  display: inline-block;
+  padding: 0.35em 0.8em;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-frei {
+  background-color: rgba(139, 174, 150, 0.15);
+  color: var(--sage-green);
+}
+
+.status-warteliste {
+  background-color: rgba(243, 156, 18, 0.15);
+  color: #d68910;
+}
+
+.status-belegt {
+  background-color: rgba(231, 76, 60, 0.15);
+  color: #c0392b;
+}
+
+/* ==========================================================================
+   NAVBAR & TOP LEISTE
+   ========================================================================== */
+
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(26, 58, 95, 0.05);
+}
+
+.navbar .nav-link {
+  color: var(--text-dark) !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--sage-green) !important;
+}
+
+/* Das Icon-Herz im Logo bekommt die Sage-Green Farbe */
+
+.bs-icon-primary svg {
+  color: var(--sage-green) !important;
+}
+
