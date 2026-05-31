@@ -1,0 +1,143 @@
+:root {
+  --pure-green: #6A994E;
+  --pure-yellow: #E9C46A;
+  --pure-red: #B05B4B;
+  --green-300: #C3D5C8;
+  --green-400: #ABC4B3;
+  --green-500: #8BAE96;
+  --green-600: #649072;
+  --green-700: #3B5444;
+  --cream-300: #FDF9F2;
+  --cream-400: #F5F0E6;
+  --cream-500: #EEE5D3;
+  --cream-600: #E2D3B6;
+  --cream-700: #D7C298;
+  --blue-400: #36608F;
+  --blue-500: #1A3A5F;
+  --blue-600: #122740;
+  --card-shadow: 0 12px 32px rgba(26, 58, 95, 0.08);
+}
+
+body {
+  font-family: "Nunito";
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: var(--cream-400) !important;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  color: var(--blue-500) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--cream-400);
+  border-radius: 30px !important;
+  border: none;
+  margin: 20px;
+}
+
+.card-body {
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.note {
+  font-size: 12px;
+}
+
+.btn {
+  border-radius: 13px;
+  background-color: var(--green-500) !important;
+  color: var(--blue-600) !important;
+  padding: 0px;
+  border-color: var(--green-500) !important;
+}
+
+.progress {
+  height: 8px;
+}
+
+.progress-bar {
+  color: rgba(0, 0, 0, 0);
+  background-color: var(--green-500);
+  border-radius: 4px;
+}
+
+.form-check-input {
+  border-color: var(--green-400);
+}
+
+.form-check-input:checked {
+  background-color: var(--green-600);
+  border-color: var(--green-600);
+}
+
+.form-check-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.time-select {
+  padding-left: 40px;
+}
+
+.form-range::-webkit-slider-thumb {
+  background: var(--green-500);
+}
+
+.form-range::-webkit-slider-runnable-track {
+  background: white;
+}
+
+output {
+  width: 80px;
+  text-align: end;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-select {
+  border-radius: 19px;
+  border-color: var(--green-500);
+  background-color: var(--cream-300);
+}
+
+.form-control {
+  border-radius: 19px;
+  border-color: var(--green-500);
+  background-color: var(--cream-300);
+}
+
+.therapeut {
+  background-color: var(--cream-500);
+  border-radius: 15px;
+  padding: 10px;
+  padding-left: 15px;
+  text-align: left !important;
+}
+
+p {
+  margin: 0px;
+}
+
+.ampel-icon {
+  margin-top: 3px;
+}
